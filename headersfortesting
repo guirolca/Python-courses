@@ -1,0 +1,12 @@
+import json
+
+fname=input('Enter the file name:')
+fh=open(fname)
+data=fh.read().decode()
+
+try:
+      js=json.loads(data)
+  except:
+      js=None
+
+js.getheaders
